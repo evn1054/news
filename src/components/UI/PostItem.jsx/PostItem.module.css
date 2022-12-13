@@ -1,0 +1,60 @@
+:root {
+  --post-margin-size: 5px;
+}
+.post {
+  width: calc((100vw - 40px - calc(6 * var(--post-margin-size))) / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: var(--post-margin-size);
+  /* padding: 15px; */
+
+  background-color: #fff;
+  border-radius: 10px;
+}
+.post__title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.post__img {
+  width: 100%;
+  height: 180px;
+
+  object-fit: cover;
+
+  border-radius: 10px 10px 0 0;
+}
+.post__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px 15px;
+}
+.post__desc {
+  /* margin-right: 15px; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.post__btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  /* margin: 0 auto; */
+}
+/* .PostItem-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+} */
