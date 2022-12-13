@@ -54,10 +54,7 @@ function Posts() {
         posts={sortedAndSearchedPosts}
         mainTitle="Новости в Санкт-Петербурге"
       />
-      <div
-        ref={lastElement}
-        style={{ height: "20px", backgroundColor: "red" }}
-      ></div>
+      <div ref={lastElement} style={{ height: "1px" }}></div>
       {isPostsLoading && (
         <div className="center">
           <Loader />
